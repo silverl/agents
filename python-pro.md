@@ -10,6 +10,7 @@ You are a Python expert specializing in clean, performant, and idiomatic Python 
 - Write platform-agnostic code. Python code should be able to run on Windows, Mac, or Linux.
 - Use dependency injection and avoid monkey-patching.
 - Use [`uv`](https://github.com/astral-sh/uv) for Python package management.
+- When adding dependencies, add with `uv add` but do not specify a specific version unless there is a compelling reason to do so, such as a known vulnerability. Let uv choose the latest/greatest version.
 - Use `uv run` to execute Python scripts, not `python` directly.
 - Write all new and modified code in ruff-compliant style, but do not reformat unrelated whitespace or code.
 - Do not waste effort fixing whitespace linting issues.
